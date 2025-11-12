@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title> Pramod Kumar Marri's Portfolio </title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Pramod</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Pramod Kumar Marri</h1>
+                    <h3 class="home__education">Aspiring AI/ML Engineer</h3>
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/Resume_Pramod_Kumar_Marri.pdf" class="button button--ghost">
+                            Download Resume
+                        </a>
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+                <div class="home__handle">
+                    <img src="assets/img/ab.jpg" alt="Pramod Kumar Marri" class="home__img">
+                </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/pramod-kumar-marri-a1936225a/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/pramod-27/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://github.com/pramod-27/pramod-portfolio" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div>
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+            <div class="about__container container grid">
+                <img src="assets/img/cd.jpg" alt="Pramod Kumar Marri" class="about__img">
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">B.Tech AI/ML (CGPA 8.4)</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Projects</h3>
+                            <span class="about__subtitle">3+ Completed</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Internships</h3>
+                            <span class="about__subtitle">3 Experiences</span>
+                        </div>
+                    </div>
+                    <p class="about__description">
+                        Aspiring AI/ML Engineer with hands-on experience in LLM integration, RAG systems, and deep learning models, seeking opportunities to build scalable AI applications and contribute to data-driven product development. B.Tech in Artificial Intelligence & Machine Learning from Sagi Rama Krishnam Raju Engineering College (2021-2025, CGPA: 8.4). Courses: Data Structures & Algorithms, Machine Learning, Deep Learning, Natural Language Processing.
+                    </p>
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Skills</h2>
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Programming & Frameworks</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">TensorFlow</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">FastAPI</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">LangChain</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Scikit-learn</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">Tools & Databases</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Git/GitHub</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Pandas/NumPy</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Pinecone/ChromaDB</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">OpenAI API</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                <div>
+                                    <h3 class="skills__name">Hugging Face</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">RAG <br> Systems</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">RAG Systems</h3>
+                            <p class="services__modal-description">
+                                Architect production-grade RAG pipelines for semantic document search and context retrieval using LangChain and vector databases.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Token chunking and efficient retrieval.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Multi-format document processing.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Speech-to-text integration.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Full-stack AI chat applications.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        LLM integration for scalable solutions.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Deep Learning <br> Models</h3>
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Deep Learning Models</h3>
+                            <p class="services__modal-description">
+                                Build and optimize CNN models for image classification, object detection, and multimodal processing using TensorFlow and Keras.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Preprocessing pipelines and augmentation.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Hyperparameter tuning and evaluation.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Video transcription with OpenAI Whisper.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Context-aware summarization.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        React frontend integration.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Data <br> Analysis</h3>
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Data Analysis</h3>
+                            <p class="services__modal-description">
+                                Conduct EDA, feature engineering, and model evaluation to improve performance in classification and regression tasks.
+                            </p>
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Random Forest and supervised ML models.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Error rate reduction by 18%.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        F1 score improvement by 14%.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Handling 50k+ datasets.
+                                    </p>
+                                </li>
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Visualization with Matplotlib/Seaborn.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Projects</h2>
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.rag'>RAG</span>
+                <span class=" work__item" data-filter='.ml'>ML</span>
+                <span class=" work__item" data-filter='.fullstack'>Full-Stack</span>
+            </div>
+            <div class="work__container container grid">
+                <div class="work__card mix rag">
+                    <img src="assets/img/doc-chat-ai.png" alt="DOC Chat AI" class="work__img">
+                    <h3 class="work__title">DOC Chat AI</h3>
+                    <a href="https://doc-chat-murex.vercel.app/" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix fullstack">
+                    <img src="assets/img/video-insight.jpg" alt="Video Insight Mapping" class="work__img">
+                    <h3 class="work__title">Video Insight Mapping</h3>
+                    <a href="https://github.com/pramod-27/video-insight-mapping" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix ml">
+                    <img src="assets/img/classification-model.jpg" alt="Robust Classification Model" class="work__img">
+                    <h3 class="work__title">Robust Classification Model</h3>
+                    <a href="https://github.com/pramodkumarmarri/classification-model" target="_blank" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">From Internships</span>
+            <h2 class="section__title">Experiences</h2>
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/eduskills.png" alt="EduSkills Foundation" class="testimonial__img">
+                        <h3 class="testimonial__name">EduSkills Foundation</h3>
+                        <p class="testimonial__description">
+                            Built and optimized CNN models for image classification and object detection using TensorFlow and Keras. Developed preprocessing pipelines to improve performance.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/blackbucks.jpg" alt="Blackbucks Engineers" class="testimonial__img">
+                        <h3 class="testimonial__name">Blackbucks Engineers</h3>
+                        <p class="testimonial__description">
+                            Developed a CNN classifier on CIFAR-10 achieving 83% accuracy. Collaborated in a 4-member team, streamlining preprocessing and experimentation workflow.
+                        </p>
+                    </div>
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/henotic.jpeg" alt="Henotic Technologies" class="testimonial__img">
+                        <h3 class="testimonial__name">Henotic Technologies</h3>
+                        <p class="testimonial__description">
+                            Built supervised ML models for classification & regression tasks with datasets of 50k+ entries. Conducted EDA and feature engineering, reducing model error rates by 18%.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contact Me</h3>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">pramodkumarmarri711@gmail.com</span>
+                            <a href="mailto:pramodkumarmarri711@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bx-phone contact__card-icon'></i>
+                            <h3 class="contact__card-title">Phone</h3>
+                            <span class="contact__card-data">+91-7842322116</span>
+                            <a href="tel:+917842322116" target="_blank" class="contact__button">
+                                Call Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin contact__card-icon'></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">pramodkumarmarri</span>
+                            <a href="https://www.linkedin.com/in/pramodkumarmarri" target="_blank" class="contact__button">
+                                Connect <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+                        <button class="button">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Pramod Kumar Marri</h1>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/pramod-kumar-marri-a1936225a" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/pramod-27/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="mailto:pramodkumarmarri711@gmail.com" target="_blank" class="footer__social-link">
+                        <i class='bx bx-envelope footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/pramod-27/pramod-portfolio" target="_blank" class="footer__social-link">
+                        <i class='bx bx-globe footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer__copy">
+                &#169; 2025 Pramod Kumar Marri. All rights reserved.
+            </span>
+        </div>
+    </footer>
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
