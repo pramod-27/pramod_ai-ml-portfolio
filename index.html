@@ -85,7 +85,7 @@
                     <a href="https://github.com/pramod-27/" target="_blank" class="home__social-link">
                         <i class='bx bxl-github'></i>
                     </a>
-                    <a href="https://github.com/pramod-27/pramod-portfolio" target="_blank" class="home__social-link">
+                    <a href="https://pramod-portfolio-4ge4.vercel.app/" target="_blank" class="home__social-link">
                         <i class='bx bxl-dribbble'></i>
                     </a>
                 </div>
@@ -544,7 +544,7 @@
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="https://github.com/pramod-27/pramod-portfolio" target="_blank" class="footer__social-link">
+                    <a href="https://pramod-portfolio-4ge4.vercel.app/" target="_blank" class="footer__social-link">
                         <i class='bx bx-globe footer__social-icon'></i>
                     </a>
                 </li>
@@ -563,5 +563,38 @@
     <script src="assets/js/mixitup.min.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== EMAILJS (For Contact Form) ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YOUR_PUBLIC_KEY");  // Replace with your EmailJS Public Key
+        })();
+    </script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const button = this.querySelector('button');
+            const originalText = button.innerHTML;
+            const messageEl = document.querySelector('.form-message');
+            button.innerHTML = 'Sending...';
+            button.disabled = true;
+            messageEl.innerHTML = '';
+
+            const now = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+
+            emailjs.sendForm('service_4o0linz', 'template_lbqv09f', this)  // Replace IDs
+                .then((result) => {
+                    messageEl.innerHTML = '<span style="color: #4ade80; font-weight: 600;">Message sent successfully! I\'ll reply soon.</span>';
+                    this.reset();
+                }, (error) => {
+                    messageEl.innerHTML = `<span style="color: #f87171;">Error: ${error.text}. Try emailing directly.</span>`;
+                })
+                .finally(() => {
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                });
+        });
+    </script>
 </body>
 </html>
