@@ -1217,3 +1217,35 @@ body.light-theme {
     border-radius: 0.5rem;
   }
 }
+
+/* About Me Fixes: Justified & Readable */
+.about__description {
+    text-align: justify;  /* Even line lengths—no ragged edges */
+    line-height: 1.7;     /* Better spacing between lines */
+    hyphens: auto;        /* Smart word breaks (e.g., "devel-op-ment") */
+    word-break: break-word; /* Prevents overflow on long words */
+    margin-bottom: 1.5rem;
+}
+
+.about__description p {
+    margin-bottom: 1rem;  /* Space between paragraphs */
+    first-line-indent: 0; /* No indent for clean look */
+}
+
+/* Mobile: Left-align for easier reading (no justify on small screens) */
+@media (max-width: 768px) {
+    .about__description {
+        text-align: left;     /* Left for mobile flow */
+        hyphens: manual;      /* Manual breaks only */
+        font-size: 0.95rem;   /* Slightly smaller for fit */
+        line-height: 1.6;     /* Tighter on mobile */
+    }
+    
+    .about__description p {
+        margin-bottom: 0.75rem;  /* Less space on small screens */
+    }
+    
+    .about__container {
+        text-align: center;   /* Center overall for balance */
+    }
+}
